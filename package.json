@@ -1,13 +1,14 @@
 {
-  "name": "node-red-heroku",
-  "version": "1.0.0",
-  "description": "Node-RED sur Heroku",
-  "dependencies": {
-    "node-red": "^3.1.0",
-    "node-red-dashboard": "^3.5.0",
-    "node-red-contrib-modbus": "^6.0.0"
-  },
-  "scripts": {
-    "start": "node-red -v -s settings.js"
-  }
+    "name": "node-red-heroku",
+    "version": "1.0.0",
+    "description": "Node-RED on Heroku",
+    "engines": {
+        "node": "18.x"
+    },
+    "dependencies": {
+        "node-red": "^3.1.0"
+    },
+    "scripts": {
+        "start": "node-red -v -u ."
+    }
 }
