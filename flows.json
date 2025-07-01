@@ -1,1 +1,995 @@
-[]
+[
+    {
+        "id": "01b0282cdaa2de4a",
+        "type": "tab",
+        "label": "Flux 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c43a33398db71050",
+        "type": "tab",
+        "label": "Flux 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9fb33e98f2f174b0",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0a7c2505892f2f96",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "M0.6",
+                "name": "switch moteur dx"
+            },
+            {
+                "addr": "M1.0",
+                "name": "switch moteur gx"
+            },
+            {
+                "addr": "M0.7",
+                "name": "switch toit haut"
+            },
+            {
+                "addr": "M1.1",
+                "name": "switch toit bas"
+            }
+        ]
+    },
+    {
+        "id": "24527b50d3556971",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7c695b40b3a3cbe3",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "PLC S7_1500",
+        "vartable": [
+            {
+                "addr": "M0.1",
+                "name": "ENABLE"
+            },
+            {
+                "addr": "M0.2",
+                "name": "cas 1"
+            },
+            {
+                "addr": "M0.3",
+                "name": "cas 2"
+            },
+            {
+                "addr": "M0.4",
+                "name": "cas 3"
+            },
+            {
+                "addr": "M0.5",
+                "name": "cas 4"
+            }
+        ]
+    },
+    {
+        "id": "1d972c164b8afbeb",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "192.168.0.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "M0.1",
+                "name": "Start DX"
+            }
+        ]
+    },
+    {
+        "id": "group1",
+        "type": "ui_group",
+        "name": "Commande",
+        "tab": "1a11399c68a8ca1c",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "1a11399c68a8ca1c",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ui-tab",
+        "type": "ui_tab",
+        "name": "Tableau de bord",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "12e38f523b680a89",
+        "type": "ui_group",
+        "name": "PLC contrôle",
+        "tab": "ui-tab",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "798f72cabdac2836",
+        "type": "ui_group",
+        "name": "PLC contrôle",
+        "tab": "ui-tab",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fe63ec61eb07a2db",
+        "type": "ui_group",
+        "name": "PLC contrôle",
+        "tab": "ui-tab",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ee2e1cc991211be7",
+        "type": "ui_group",
+        "name": "PLC contrôle",
+        "tab": "ui-tab",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "543de3bd647956b9",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "Q0.5",
+                "name": "DIRECTION BOUT 1 BOBINE"
+            },
+            {
+                "addr": "Q0.6",
+                "name": "DIRECTION PORTE 2 BOBINE"
+            },
+            {
+                "addr": "Q0.4",
+                "name": "TOIT VER BAS"
+            },
+            {
+                "addr": "Q1.0",
+                "name": "TOIT VERS HAUT"
+            }
+        ]
+    },
+    {
+        "id": "864bcafaa923cef6",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "M0.6",
+                "name": "switch moteur dx"
+            },
+            {
+                "addr": "M1.0",
+                "name": "switch moteur gx"
+            },
+            {
+                "addr": "M0.7",
+                "name": "switch toit haut"
+            },
+            {
+                "addr": "M1.1",
+                "name": "switch toit bas"
+            }
+        ]
+    },
+    {
+        "id": "63f5b2dd199cb7d2",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "",
+        "port": "102",
+        "rack": "0",
+        "slot": "2",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "2000",
+        "name": "",
+        "vartable": [
+            {
+                "addr": "M0.6",
+                "name": "switch moteur dx"
+            },
+            {
+                "addr": "M1.0",
+                "name": "switch moteur gx"
+            },
+            {
+                "addr": "M0.7",
+                "name": "switch toit haut"
+            },
+            {
+                "addr": "M1.1",
+                "name": "switch toit bas"
+            }
+        ]
+    },
+    {
+        "id": "deb71998fbd0f049",
+        "type": "remote-config",
+        "name": "Node-RED UI",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "6te3inai6v013e6ar6vmzw0f5i4y2557pzr4u1vwdru29xkmoqb64jlutim4dr16",
+        "server": "nodered04.remote-red.com",
+        "region": "de"
+    },
+    {
+        "id": "35e33778343d2bf4",
+        "type": "s7 out",
+        "z": "01b0282cdaa2de4a",
+        "endpoint": "7c695b40b3a3cbe3",
+        "variable": "ENABLE",
+        "name": "",
+        "x": 420,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6d0c1b40436f0b7d",
+        "type": "ui_button",
+        "z": "01b0282cdaa2de4a",
+        "name": "",
+        "group": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "ENABLE COUNTER",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "BLUE",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 80,
+        "wires": [
+            [
+                "35e33778343d2bf4"
+            ]
+        ]
+    },
+    {
+        "id": "d8de5f2d89ddf422",
+        "type": "ui_button",
+        "z": "01b0282cdaa2de4a",
+        "name": "",
+        "group": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "DISABLE COUNTER",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "RED",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 160,
+        "wires": [
+            [
+                "35e33778343d2bf4"
+            ]
+        ]
+    },
+    {
+        "id": "8248d4e64557ce36",
+        "type": "s7 out",
+        "z": "c43a33398db71050",
+        "endpoint": "1d972c164b8afbeb",
+        "variable": "Start DX",
+        "name": "",
+        "x": 460,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "45ebcadb813a30f4",
+        "type": "ui_switch",
+        "z": "c43a33398db71050",
+        "name": "Marche/Arrêt",
+        "label": "Système",
+        "tooltip": "",
+        "group": "group1",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "green",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "red",
+        "animate": true,
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "cbac06e3f4b389b5",
+                "8248d4e64557ce36"
+            ]
+        ]
+    },
+    {
+        "id": "cbac06e3f4b389b5",
+        "type": "function",
+        "z": "c43a33398db71050",
+        "name": "État LED",
+        "func": "msg.color = msg.payload ? \"limegreen\" : \"darkred\";\nmsg.text = msg.payload ? \"ON\" : \"OFF\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 160,
+        "wires": [
+            [
+                "05e0e5371d30ca94"
+            ]
+        ]
+    },
+    {
+        "id": "05e0e5371d30ca94",
+        "type": "ui_template",
+        "z": "c43a33398db71050",
+        "group": "group1",
+        "name": "LED Visuelle",
+        "order": 2,
+        "width": 2,
+        "height": 2,
+        "format": "<div style=\"text-align:center;\">\n  <div style=\"width:40px; height:40px; border-radius:50%; background-color:{{msg.color}}; margin:auto;\"></div>\n  <p>{{msg.text}}</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 620,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c08570a6c4a9040",
+        "type": "s7 in",
+        "z": "c43a33398db71050",
+        "endpoint": "7c695b40b3a3cbe3",
+        "mode": "single",
+        "variable": "cas 2",
+        "diff": true,
+        "name": "cas2",
+        "x": 170,
+        "y": 540,
+        "wires": [
+            [
+                "ddcf8b38992a234d"
+            ]
+        ]
+    },
+    {
+        "id": "47fca77e48cabdf8",
+        "type": "s7 in",
+        "z": "c43a33398db71050",
+        "endpoint": "7c695b40b3a3cbe3",
+        "mode": "single",
+        "variable": "cas 3",
+        "diff": true,
+        "name": "cas3",
+        "x": 190,
+        "y": 600,
+        "wires": [
+            [
+                "3a0b8d5b5dd8a586"
+            ]
+        ]
+    },
+    {
+        "id": "1c122f2a90b7c2a6",
+        "type": "s7 in",
+        "z": "c43a33398db71050",
+        "endpoint": "7c695b40b3a3cbe3",
+        "mode": "single",
+        "variable": "cas 4",
+        "diff": true,
+        "name": "cas4",
+        "x": 190,
+        "y": 660,
+        "wires": [
+            [
+                "953c2ec352ae6db7"
+            ]
+        ]
+    },
+    {
+        "id": "627e0b7ad6a07c25",
+        "type": "s7 in",
+        "z": "c43a33398db71050",
+        "endpoint": "7c695b40b3a3cbe3",
+        "mode": "single",
+        "variable": "cas 1",
+        "diff": true,
+        "name": "cas1",
+        "x": 210,
+        "y": 460,
+        "wires": [
+            [
+                "acfaebcd42278a5e"
+            ]
+        ]
+    },
+    {
+        "id": "acfaebcd42278a5e",
+        "type": "ui_switch",
+        "z": "c43a33398db71050",
+        "name": "Cas 1 (Hbas;Tok)",
+        "label": "Cas 1",
+        "tooltip": "",
+        "group": "ee2e1cc991211be7",
+        "order": 1,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "cas1",
+        "topicType": "str",
+        "style": "display: none;",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "x": 410,
+        "y": 480,
+        "wires": [
+            [
+                "81413dc4da975354"
+            ]
+        ]
+    },
+    {
+        "id": "ddcf8b38992a234d",
+        "type": "ui_switch",
+        "z": "c43a33398db71050",
+        "name": "Cas 2 Hbas;Tbas",
+        "label": "Cas 2 ",
+        "tooltip": "",
+        "group": "ee2e1cc991211be7",
+        "order": 2,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "cas2",
+        "topicType": "str",
+        "style": "display: none;",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "x": 390,
+        "y": 540,
+        "wires": [
+            [
+                "81413dc4da975354"
+            ]
+        ]
+    },
+    {
+        "id": "3a0b8d5b5dd8a586",
+        "type": "ui_switch",
+        "z": "c43a33398db71050",
+        "name": "Cas 3 humOK;tempOK",
+        "label": "Cas 3",
+        "tooltip": "",
+        "group": "ee2e1cc991211be7",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "cas3",
+        "topicType": "str",
+        "style": "display: none;",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "x": 400,
+        "y": 600,
+        "wires": [
+            [
+                "81413dc4da975354"
+            ]
+        ]
+    },
+    {
+        "id": "953c2ec352ae6db7",
+        "type": "ui_switch",
+        "z": "c43a33398db71050",
+        "name": "Cas 4 (reservoir vide)",
+        "label": "Cas 4",
+        "tooltip": "",
+        "group": "ee2e1cc991211be7",
+        "order": 4,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "cas4",
+        "topicType": "str",
+        "style": "display: none;",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "x": 400,
+        "y": 660,
+        "wires": [
+            [
+                "81413dc4da975354"
+            ]
+        ]
+    },
+    {
+        "id": "81413dc4da975354",
+        "type": "function",
+        "z": "c43a33398db71050",
+        "name": "Mémoriser états",
+        "func": "let ctx = context.get('states') || {\n    cas1: false,\n    cas2: false,\n    cas3: false,\n    cas4: false\n};\n\nctx[msg.topic] = msg.payload;\ncontext.set('states', ctx);\n\nmsg.payload = ctx;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 560,
+        "wires": [
+            [
+                "683602c77b01b46b"
+            ]
+        ]
+    },
+    {
+        "id": "683602c77b01b46b",
+        "type": "ui_template",
+        "z": "c43a33398db71050",
+        "group": "ee2e1cc991211be7",
+        "name": "LEDs couleurs personnalisées",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "format": "<style>.led { width: 30px; height: 30px; border-radius: 50%; display: inline-block; margin: 5px; border: 2px solid white; }</style>\n<div>\n  <div class=\"led\" ng-style=\"{'background-color': msg.payload.cas1 ? 'orange' : 'black'}\"></div> Cas 1<br>\n  <div class=\"led\" ng-style=\"{'background-color': msg.payload.cas2 ? 'yellow' : 'black'}\"></div> Cas 2<br>\n  <div class=\"led\" ng-style=\"{'background-color': msg.payload.cas3 ? 'limegreen' : 'black'}\"></div> Cas 3<br>\n  <div class=\"led\" ng-style=\"{'background-color': msg.payload.cas4 ? 'red' : 'black'}\"></div> Cas 4<br>\n</div>",
+        "storeOutMessages": false,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 850,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0d2ad3cdf108b3b4",
+        "type": "ui_switch",
+        "z": "c43a33398db71050",
+        "name": "",
+        "label": "switch moteur DX",
+        "tooltip": "",
+        "group": "group1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "x": 330,
+        "y": 780,
+        "wires": [
+            [
+                "820aed087b3b8ab3"
+            ]
+        ]
+    },
+    {
+        "id": "820aed087b3b8ab3",
+        "type": "s7 out",
+        "z": "c43a33398db71050",
+        "endpoint": "0a7c2505892f2f96",
+        "variable": "switch moteur dx",
+        "name": "MOTEUR DX",
+        "x": 580,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "dc95587f68ea3691",
+        "type": "ui_switch",
+        "z": "c43a33398db71050",
+        "name": "",
+        "label": "switch moteur GX + ACTIVATION",
+        "tooltip": "",
+        "group": "group1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "x": 260,
+        "y": 860,
+        "wires": [
+            [
+                "cf71805a3315137b"
+            ]
+        ]
+    },
+    {
+        "id": "cf71805a3315137b",
+        "type": "s7 out",
+        "z": "c43a33398db71050",
+        "endpoint": "0a7c2505892f2f96",
+        "variable": "switch moteur gx",
+        "name": "MOTEUR GX",
+        "x": 580,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "af562092606fef35",
+        "type": "ui_switch",
+        "z": "c43a33398db71050",
+        "name": "",
+        "label": "switch TOIT HAUT",
+        "tooltip": "",
+        "group": "group1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "x": 330,
+        "y": 940,
+        "wires": [
+            [
+                "ed973212fd52895e"
+            ]
+        ]
+    },
+    {
+        "id": "ed973212fd52895e",
+        "type": "s7 out",
+        "z": "c43a33398db71050",
+        "endpoint": "0a7c2505892f2f96",
+        "variable": "switch toit haut",
+        "name": "Toit haut",
+        "x": 560,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "b64e1c999a7d6402",
+        "type": "ui_switch",
+        "z": "c43a33398db71050",
+        "name": "",
+        "label": "switch TOIT BAS",
+        "tooltip": "",
+        "group": "group1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "x": 330,
+        "y": 1020,
+        "wires": [
+            [
+                "af58b05c8712609d"
+            ]
+        ]
+    },
+    {
+        "id": "af58b05c8712609d",
+        "type": "s7 out",
+        "z": "c43a33398db71050",
+        "endpoint": "0a7c2505892f2f96",
+        "variable": "switch toit bas",
+        "name": "Toit bas",
+        "x": 560,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "b0b9a452c608b37f",
+        "type": "remote-access",
+        "z": "c43a33398db71050",
+        "confignode": "deb71998fbd0f049",
+        "name": "",
+        "verbose": 0,
+        "x": 360,
+        "y": 80,
+        "wires": [
+            [],
+            []
+        ]
+    }
+]
